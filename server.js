@@ -37,6 +37,6 @@ server.on('error', (err) => {
     console.error('Server Error: ', err);
 })
 //server listen
-server.listen(8080, () => {
-    console.log('Listen on 8080!')
+server.listen(process.env.PORT || 8080, function() {
+   console.log('listen On 8080');
 });
